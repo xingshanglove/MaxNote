@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/finger_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	
+        <com.yangpan.ynote.utils.LineEditText
+            android:id="@+id/et_handwrite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:fadingEdge="vertical"
+            android:focusable="true"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+		<com.yangpan.ynote.view.NormalTextView 
+			android:id="@+id/chose_text"		    
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    />
+        <com.yangpan.ynote.view.TouchView
+            android:id="@+id/touch_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" >
+        </com.yangpan.ynote.view.TouchView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/paintBottomMenu"
+        android:src="@drawable/line" />
+
+    <GridView
+        android:id="@+id/paintBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigationbar_bg"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</RelativeLayout>

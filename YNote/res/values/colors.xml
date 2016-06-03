@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义一些用到的颜色变量 -->
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#0000ff00</color>
+    <color name="lightyellow">#FFFFE0</color>
+ <!-- 亮黄色 -->
+
+    <style name="edit_clock_layout">
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingTop">8dip</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance"></style>
+
+    <style name="TextAppearance.EditEvent_Label">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">2dip</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_homeTime">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingRight">2dip</item>
+    </style>
+
+</resources>

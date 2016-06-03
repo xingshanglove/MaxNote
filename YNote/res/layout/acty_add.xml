@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/rl_root" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.yangpan.ynote.utils.LineEditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:fadingEdge="vertical"
+            android:gravity="top"
+            android:hint="请输入内容"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="10dp"
+            android:scrollbars="vertical"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:src="@drawable/line" />
+
+    <GridView
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/navigationbar_bg"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</RelativeLayout>

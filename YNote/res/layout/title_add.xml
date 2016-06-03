@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/navigationbar_bg" >
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/navigationbar_backup" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:text="新增记事"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bt_reminder"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/bt_save"
+        android:background="@drawable/alarm_no" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/navigationbar_save" />
+
+</RelativeLayout>
